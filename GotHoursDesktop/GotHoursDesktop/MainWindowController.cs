@@ -24,12 +24,12 @@ namespace GotHoursDesktop
             get { return _currentUser; }
 
         }
-        private Task _CurrentTask;
-        private List<Task> _ListOfTasks = new List<Task>();
+        private Task _currentTask;
+        private IList<Task> _listOfTasks = new List<Task>();
 
-        public List<Task> ListOfTasks
+        public IList<Task> ListOfTasks
         {
-            get { return _ListOfTasks; }
+            get { return _listOfTasks; }
 
         }
  
@@ -74,13 +74,12 @@ namespace GotHoursDesktop
         private void loadTasks()
         {
             
-            var timelogs = _session.CreateQuery("from TimeLog tl where tl.User = :user ").SetParameter("user",_currentUser).List<TimeLog>();
+            var tasks = _session.CreateQuery(" select distinct Task from TimeLog tl where tl.User = :user ").SetParameter("user",_currentUser).List<Task>();
 
-            if(timelogs!=null)
+            if(tasks!=null)
             {
 
-                _ListOfTasks = (from tl in timelogs
-                                select tl.Task).ToList();
+                _listOfTasks = tasks;
 
 
             }
@@ -99,21 +98,21 @@ namespace GotHoursDesktop
             tLog.StartTime = pStartTime;
             tLog.EndTime = pEndTime;
 
-            if (_CurrentTask != null && _CurrentTask.TaskName == pTaskName)
+            if (_currentTask != null && _currentTask.TaskName == pTaskName)
             {
-                tLog.Task = _CurrentTask;
+                tLog.Task = _currentTask;
 
             }
             else
             {
 
-                _CurrentTask = getTask(pTaskName);
+                _currentTask = getTask(pTaskName);
 
             }
 
 
 
-            tLog.Task = _CurrentTask;
+            tLog.Task = _currentTask;
 
             _session.SaveOrUpdate(tLog);
 
@@ -125,7 +124,7 @@ namespace GotHoursDesktop
 
         private Task getTask(string pTaskName){
 
-            var tsk = (from t in _ListOfTasks
+            var tsk = (from t in _listOfTasks
                        where t.TaskName == pTaskName
                        select t).FirstOrDefault<Task>();
 

@@ -58,9 +58,23 @@ namespace GotHoursDesktop
         {
             String taskName = cbxTask.Text;
             _controller.LogTime(taskName, _startTime, DateTime.Now);
-            _startTime = DateTime.Now;
+       
 
-         
+            txtPopUpLogTime.Text =
+                String.Format(
+                    @"Time logged for task: {0}
+                                                   From {1} to {2}",
+                    taskName, _startTime.ToShortTimeString(), DateTime.Now.ToShortTimeString());
+
+            _startTime = DateTime.Now;
+            popUpLogTime.IsOpen = true;
+
+           
+
+      
+           
         }
+
+
 	}
 }
