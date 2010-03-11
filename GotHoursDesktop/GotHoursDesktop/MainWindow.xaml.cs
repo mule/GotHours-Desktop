@@ -62,8 +62,7 @@ namespace GotHoursDesktop
 
             txtPopUpLogTime.Text =
                 String.Format(
-                    @"Time logged for task: {0}
-                                                   From {1} to {2}",
+                    "Time logged for task: \n{0} \nFrom {1} to {2}",
                     taskName, _startTime.ToShortTimeString(), DateTime.Now.ToShortTimeString());
 
             _startTime = DateTime.Now;

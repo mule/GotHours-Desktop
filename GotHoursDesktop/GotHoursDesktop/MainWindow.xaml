@@ -18,8 +18,8 @@
 		<ComboBox x:Name="cbxTask" Margin="25,8,143,8" IsEditable="True" FontFamily="Raavi" FontSize="10.667" ItemTemplate="{StaticResource TaskTemplate}" />
 		<Button x:Name="btnLogTime" HorizontalAlignment="Right" Margin="0,9,17,8" Width="101" Content="Log time" FontFamily="Raavi" FontSize="9.333" Click="btnLogTime_Click" />
 		<Popup x:Name="popUpLogTime" AllowsTransparency="True" PopupAnimation="Slide" StaysOpen="False">
-			<Grid x:Name="grdPopUpLogTime" Width="100" Height="100" Background="#FFCEC71D">
-				<TextBlock x:Name="txtPopUpLogTime" TextWrapping="Wrap"/>
+			<Grid x:Name="grdPopUpLogTime" Background="#FFCEC71D" MinWidth="100" MinHeight="100">
+				<TextBlock x:Name="txtPopUpLogTime" TextWrapping="Wrap" FontFamily="Viner Hand ITC" Margin="5" MaxWidth="200" TextAlignment="Center"/>
 			</Grid>
 		</Popup>
 	</Grid>
