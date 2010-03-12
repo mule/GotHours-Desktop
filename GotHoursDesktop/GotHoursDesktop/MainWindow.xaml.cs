@@ -52,6 +52,8 @@ namespace GotHoursDesktop
         {
             this.WindowState = WindowState.Normal;
             this.Activate();
+            popUpTaskQuery.IsOpen = true;
+            txtTaskQuery.Text = String.Format("What have you been working on since {0}?", _startTime.ToShortTimeString());
         }
 
         private void btnLogTime_Click(object sender, RoutedEventArgs e)
@@ -74,6 +76,14 @@ namespace GotHoursDesktop
            
         }
 
+        private void cbxTask_PreviewMouseRightButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+           
+        }
 
+        private void btnActivity_Click(object sender, RoutedEventArgs e)
+        {
+            pnlActivity.Visibility = pnlActivity.Visibility != System.Windows.Visibility.Visible ? System.Windows.Visibility.Visible : System.Windows.Visibility.Collapsed;
+        }
 	}
 }

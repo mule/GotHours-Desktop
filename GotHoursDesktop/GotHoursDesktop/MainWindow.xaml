@@ -3,8 +3,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:local="clr-namespace:GotHoursDesktop" xmlns:Entities="clr-namespace:GotHoursDAL.Entities;assembly=GotHoursDAL" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="GotHoursDesktop.MainWindow"
 	x:Name="wndGotHours"
-	Title="GotHours"
-	Width="640" Height="76" mc:Ignorable="d" Background="#FF3A6F82">
+	Title="GotHours" mc:Ignorable="d" Background="#FF3A6F82" SizeToContent="WidthAndHeight" d:DesignWidth="761">
 	<Window.Resources>
 		<DataTemplate  x:Key="TaskTemplate" DataType="{x:Type Entities:Task}">
 			<StackPanel>
@@ -14,14 +13,28 @@
 		</DataTemplate>
 	</Window.Resources>
 
-	<Grid x:Name="LayoutRoot" VerticalAlignment="Top" Height="33">
-		<ComboBox x:Name="cbxTask" Margin="25,8,143,8" IsEditable="True" FontFamily="Raavi" FontSize="10.667" ItemTemplate="{StaticResource TaskTemplate}" />
-		<Button x:Name="btnLogTime" HorizontalAlignment="Right" Margin="0,9,17,8" Width="101" Content="Log time" FontFamily="Raavi" FontSize="9.333" Click="btnLogTime_Click" />
-		<Popup x:Name="popUpLogTime" AllowsTransparency="True" PopupAnimation="Slide" StaysOpen="False">
-			<Grid x:Name="grdPopUpLogTime" Background="#FFCEC71D" MinWidth="100" MinHeight="100">
-				<TextBlock x:Name="txtPopUpLogTime" TextWrapping="Wrap" FontFamily="Viner Hand ITC" Margin="5" MaxWidth="200" TextAlignment="Center"/>
-			</Grid>
-		</Popup>
+	<Grid x:Name="pnlRoot" Margin="0,0,-0.667,3">
+		<Grid x:Name="pnlActivity" Margin="591,89.167,12,181.5" RenderTransformOrigin="0.472,0.493" MinHeight="100" MinWidth="150" Visibility="Collapsed">
+			<TreeView HorizontalAlignment="Left" Margin="8,8,0,0" ClipToBounds="True" VerticalAlignment="Top"/>
+	
+
+		</Grid>
+		<Grid x:Name="pnlTimeLogger" HorizontalAlignment="Left" Margin="8,5,0,0" Width="733" RenderTransformOrigin="0.489,0.516" VerticalAlignment="Top" Height="42.834">
+			<ComboBox x:Name="cbxTask" Margin="68.167,4.167,0,19" IsEditable="True" FontFamily="Raavi" FontSize="10.667" ItemTemplate="{StaticResource TaskTemplate}" PreviewMouseRightButtonDown="cbxTask_PreviewMouseRightButtonDown" RenderTransformOrigin="0.386,0.466" Width="500" HorizontalAlignment="Left" VerticalAlignment="Top" Height="17"/>
+			<Button x:Name="btnLogTime" HorizontalAlignment="Right" Margin="0,4.167,59.833,20" Width="101" Content="Log time" FontFamily="Raavi" FontSize="9.333" Click="btnLogTime_Click" VerticalAlignment="Top" Height="16" />
+			<Popup x:Name="popUpLogTime" AllowsTransparency="True" PopupAnimation="Slide" StaysOpen="False">
+				<Grid x:Name="grdPopUpLogTime" Background="#FFCEC71D" MinWidth="100" MinHeight="100">
+					<TextBlock x:Name="txtPopUpLogTime" TextWrapping="Wrap" FontFamily="Segoe Print" Margin="5" MaxWidth="200"/>
+				</Grid>
+			</Popup>
+			<Button x:Name="btnActivity" HorizontalAlignment="Right" Margin="0,24.167,59.833,0" Width="101" Content="Activity today" Height="16" FontFamily="Raavi" FontSize="9.333" VerticalAlignment="Top" Click="btnActivity_Click" />
+			<Label HorizontalAlignment="Left" Margin="3.673,0,0,0" Content="Select task:" VerticalAlignment="Top" Width="60.494" Height="20.167" FontFamily="Raavi" FontSize="9.333"/>
+			<Popup x:Name="popUpTaskQuery" Placement="Top" PopupAnimation="Slide">
+				<Grid x:Name="pnlTaskQuery" Width="100" Height="100" Background="#FFCEC71D">
+					<TextBlock x:Name="txtTaskQuery" Text="TextBlock" TextWrapping="Wrap"/>
+				</Grid>
+			</Popup>
+		</Grid>
 	</Grid>
 	
 
