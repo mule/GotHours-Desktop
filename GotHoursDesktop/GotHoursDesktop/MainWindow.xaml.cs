@@ -14,25 +14,26 @@ using System.Windows.Threading;
 
 namespace GotHoursDesktop
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow : Window
-	{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
         private MainWindowController _controller;
         private DispatcherTimer _timer;
         private DateTime _startTime;
 
-        
-		public MainWindow()
-		{
-			this.InitializeComponent();
+
+
+        public MainWindow()
+        {
+            this.InitializeComponent();
 
             TrayMinimizer.EnableMinimizeToTray(this);
 
             _controller = new MainWindowController();
             _timer = new DispatcherTimer();
-        
+
 
             this.Title += " - Hello " + _controller.CurrentUser.UserName;
 
@@ -43,10 +44,12 @@ namespace GotHoursDesktop
             _startTime = DateTime.Now;
             _timer.Start();
 
+            TaskView.CurrentUser = _controller.CurrentUser;
 
-           
-         
-		}
+
+
+
+        }
 
         void _timer_Tick(object sender, EventArgs e)
         {
@@ -60,7 +63,7 @@ namespace GotHoursDesktop
         {
             String taskName = cbxTask.Text;
             _controller.LogTime(taskName, _startTime, DateTime.Now);
-       
+
 
             txtPopUpLogTime.Text =
                 String.Format(
@@ -70,20 +73,27 @@ namespace GotHoursDesktop
             _startTime = DateTime.Now;
             popUpLogTime.IsOpen = true;
 
-           
 
-      
-           
+
+
+
         }
 
         private void cbxTask_PreviewMouseRightButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-           
+
         }
 
         private void btnActivity_Click(object sender, RoutedEventArgs e)
         {
-            pnlActivity.Visibility = pnlActivity.Visibility != System.Windows.Visibility.Visible ? System.Windows.Visibility.Visible : System.Windows.Visibility.Collapsed;
+            if (pnlTaskView.Visibility == System.Windows.Visibility.Collapsed)
+                pnlTaskView.Visibility = System.Windows.Visibility.Visible;
+            else
+            {
+                pnlTaskView.Visibility = System.Windows.Visibility.Collapsed;
+            }
+
         }
-	}
+
+    }
 }

@@ -17,3 +17,22 @@ C:\Users\Jukka Puranen\Documents\Expression\Blend 3\Projects\GotHoursDesktop\Got
 C:\Users\Jukka Puranen\Documents\Expression\Blend 3\Projects\GotHoursDesktop\GotHoursDAL\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Jukka Puranen\Documents\Expression\Blend 3\Projects\GotHoursDesktop\GotHoursDAL\obj\Release\GotHoursDAL.dll
 C:\Users\Jukka Puranen\Documents\Expression\Blend 3\Projects\GotHoursDesktop\GotHoursDAL\obj\Release\GotHoursDAL.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\GotHoursDAL.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\GotHoursDAL.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\Antlr3.Runtime.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\Castle.Core.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\Castle.DynamicProxy2.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\FluentNHibernate.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\Iesi.Collections.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\NHibernate.ByteCode.Castle.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\NHibernate.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\Castle.DynamicProxy2.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\NHibernate.ByteCode.Castle.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\FluentNHibernate.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\FluentNHibernate.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\Iesi.Collections.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\NHibernate.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\bin\Release\Castle.Core.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\obj\Release\ResolveAssemblyReference.cache
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\obj\Release\GotHoursDAL.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDAL\obj\Release\GotHoursDAL.pdb

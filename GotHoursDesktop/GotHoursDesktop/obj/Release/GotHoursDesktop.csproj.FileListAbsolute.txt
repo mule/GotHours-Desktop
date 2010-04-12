@@ -29,3 +29,34 @@ C:\Users\Jukka Puranen\Documents\Expression\Blend 3\Projects\GotHoursDesktop\Got
 C:\Users\Jukka Puranen\Documents\Expression\Blend 3\Projects\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop.g.resources
 C:\Users\Jukka Puranen\Documents\Expression\Blend 3\Projects\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop.exe
 C:\Users\Jukka Puranen\Documents\Expression\Blend 3\Projects\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\GotHoursDesktop.exe.config
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop.exe
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\GotHoursDesktop.exe
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\GotHoursDesktop.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\Antlr3.Runtime.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\Castle.Core.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\Castle.DynamicProxy2.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\FluentNHibernate.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\GotHoursDAL.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\Iesi.Collections.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\NHibernate.ByteCode.Castle.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\NHibernate.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\Castle.DynamicProxy2.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\Castle.Core.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\NHibernate.ByteCode.Castle.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\FluentNHibernate.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\FluentNHibernate.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\GotHoursDAL.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\Iesi.Collections.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Release\NHibernate.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\ResolveAssemblyReference.cache
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\MainWindow.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\App.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop_MarkupCompile.cache
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop_MarkupCompile.lref
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\App.baml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\MainWindow.baml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\SampleData\TaskList\TaskList.baml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop.g.resources

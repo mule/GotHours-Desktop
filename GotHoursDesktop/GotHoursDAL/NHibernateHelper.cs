@@ -25,8 +25,10 @@ namespace GotHoursDAL
         {
             _config = FluentNHibernate.Cfg.Fluently.Configure().Database(
                 MsSqlConfiguration.MsSql2008.ConnectionString(c => c.FromConnectionStringWithKey("GotHoursTestConStr")
-                    )).Mappings(m => m.FluentMappings.AddFromAssemblyOf<GotHoursDAL.Mappings.TaskMap>());      
+                    ).ShowSql()).Mappings(m => m.FluentMappings.AddFromAssemblyOf<GotHoursDAL.Mappings.TaskMap>());      
             _factory = _config.BuildSessionFactory();
+            
+          
                
            
 
@@ -38,7 +40,7 @@ namespace GotHoursDAL
       public static ISession  OpenSession()
       {
 
-         return _factory.OpenSession();
+          return _factory.OpenSession();
 
       }
 

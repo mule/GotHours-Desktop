@@ -28,8 +28,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Debug|Win32.ActiveCfg = Debug|Any CPU
 		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Release|Any CPU.Build.0 = Release|Any CPU
@@ -38,8 +38,8 @@ Global
 		{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}.Release|Win32.ActiveCfg = Release|Any CPU
 		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Debug|Win32.ActiveCfg = Debug|Any CPU
 		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA6ECFF6-D5DD-4802-970D-F26ED965332B}.Release|Any CPU.Build.0 = Release|Any CPU

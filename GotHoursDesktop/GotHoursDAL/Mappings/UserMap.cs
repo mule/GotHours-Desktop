@@ -13,6 +13,8 @@ namespace GotHoursDAL.Mappings
         {
             Id(x => x.Id);
             Map(x => x.UserName);
+            HasMany<TimeLog>(x => x.TimeLogs);
+
 
         }
     }

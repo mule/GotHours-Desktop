@@ -14,11 +14,6 @@
 	</Window.Resources>
 
 	<Grid x:Name="pnlRoot" Margin="0,0,-0.667,3">
-		<Grid x:Name="pnlActivity" Margin="591,89.167,12,181.5" RenderTransformOrigin="0.472,0.493" MinHeight="100" MinWidth="150" Visibility="Collapsed">
-			<TreeView HorizontalAlignment="Left" Margin="8,8,0,0" ClipToBounds="True" VerticalAlignment="Top"/>
-	
-
-		</Grid>
 		<Grid x:Name="pnlTimeLogger" HorizontalAlignment="Left" Margin="8,5,0,0" Width="733" RenderTransformOrigin="0.489,0.516" VerticalAlignment="Top" Height="42.834">
 			<ComboBox x:Name="cbxTask" Margin="68.167,4.167,0,19" IsEditable="True" FontFamily="Raavi" FontSize="10.667" ItemTemplate="{StaticResource TaskTemplate}" PreviewMouseRightButtonDown="cbxTask_PreviewMouseRightButtonDown" RenderTransformOrigin="0.386,0.466" Width="500" HorizontalAlignment="Left" VerticalAlignment="Top" Height="17"/>
 			<Button x:Name="btnLogTime" HorizontalAlignment="Right" Margin="0,4.167,59.833,20" Width="101" Content="Log time" FontFamily="Raavi" FontSize="9.333" Click="btnLogTime_Click" VerticalAlignment="Top" Height="16" />
@@ -29,12 +24,19 @@
 			</Popup>
 			<Button x:Name="btnActivity" HorizontalAlignment="Right" Margin="0,24.167,59.833,0" Width="101" Content="Activity today" Height="16" FontFamily="Raavi" FontSize="9.333" VerticalAlignment="Top" Click="btnActivity_Click" />
 			<Label HorizontalAlignment="Left" Margin="3.673,0,0,0" Content="Select task:" VerticalAlignment="Top" Width="60.494" Height="20.167" FontFamily="Raavi" FontSize="9.333"/>
-			<Popup x:Name="popUpTaskQuery" Placement="Top" PopupAnimation="Slide">
+			<Popup x:Name="popUpTaskQuery" Placement="Top" PopupAnimation="Slide" StaysOpen="False" AllowsTransparency="True" IsOpen="True">
 				<Grid x:Name="pnlTaskQuery" Width="100" Height="100" Background="#FFCEC71D">
-					<TextBlock x:Name="txtTaskQuery" Text="TextBlock" TextWrapping="Wrap"/>
+					<TextBlock x:Name="txtTaskQuery" TextWrapping="Wrap" FontFamily="Segoe Print"/>
 				</Grid>
 			</Popup>
-		</Grid>
+            <Button HorizontalAlignment="Left" Margin="3.673,0,0,2.667" VerticalAlignment="Bottom" Width="56.167" Height="15.667" Content="Task Details" FontFamily="Raavi" FontSize="8"/>
+        </Grid>
+		<DockPanel x:Name="pnlTaskView" HorizontalAlignment="Right" Margin="0,47.834,4.667,8" LastChildFill="False" Visibility="Collapsed">
+			<local:TaskTreeViewControl x:Name="TaskView" Margin="0,0,0,25" d:LayoutOverrides="VerticalAlignment, HorizontalMargin" Width="200" />
+		</DockPanel>
+
+	
+		
 	</Grid>
 	
 
