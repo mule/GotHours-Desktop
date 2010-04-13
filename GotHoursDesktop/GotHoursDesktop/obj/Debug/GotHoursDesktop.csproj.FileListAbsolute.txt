@@ -62,3 +62,5 @@ D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\SampleData\TaskList\T
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\GotHoursDesktop.g.resources
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TaskTreeViewControl.baml
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TaskTreeViewControl.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TimeLoggerControl.baml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TimeLoggerControl.g.cs

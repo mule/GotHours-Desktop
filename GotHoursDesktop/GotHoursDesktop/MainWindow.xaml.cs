@@ -10,7 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Windows.Threading;
+
 
 namespace GotHoursDesktop
 {
@@ -19,30 +19,20 @@ namespace GotHoursDesktop
     /// </summary>
     public partial class MainWindow : Window
     {
+     
+
+
         private MainWindowController _controller;
-        private DispatcherTimer _timer;
-        private DateTime _startTime;
 
 
 
         public MainWindow()
         {
             this.InitializeComponent();
-
+            _controller = new MainWindowController();
             TrayMinimizer.EnableMinimizeToTray(this);
 
-            _controller = new MainWindowController();
-            _timer = new DispatcherTimer();
 
-
-            this.Title += " - Hello " + _controller.CurrentUser.UserName;
-
-            cbxTask.ItemsSource = _controller.ListOfTasks;
-
-            _timer.Interval = new TimeSpan(0, 15, 0);
-            _timer.Tick += new EventHandler(_timer_Tick);
-            _startTime = DateTime.Now;
-            _timer.Start();
 
             TaskView.CurrentUser = _controller.CurrentUser;
 
@@ -51,38 +41,8 @@ namespace GotHoursDesktop
 
         }
 
-        void _timer_Tick(object sender, EventArgs e)
-        {
-            this.WindowState = WindowState.Normal;
-            this.Activate();
-            popUpTaskQuery.IsOpen = true;
-            txtTaskQuery.Text = String.Format("What have you been working on since {0}?", _startTime.ToShortTimeString());
-        }
-
-        private void btnLogTime_Click(object sender, RoutedEventArgs e)
-        {
-            String taskName = cbxTask.Text;
-            _controller.LogTime(taskName, _startTime, DateTime.Now);
 
 
-            txtPopUpLogTime.Text =
-                String.Format(
-                    "Time logged for task: \n{0} \nFrom {1} to {2}",
-                    taskName, _startTime.ToShortTimeString(), DateTime.Now.ToShortTimeString());
-
-            _startTime = DateTime.Now;
-            popUpLogTime.IsOpen = true;
-
-
-
-
-
-        }
-
-        private void cbxTask_PreviewMouseRightButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-
-        }
 
         private void btnActivity_Click(object sender, RoutedEventArgs e)
         {

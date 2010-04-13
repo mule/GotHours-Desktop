@@ -60,3 +60,7 @@ D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\App.baml
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\MainWindow.baml
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\SampleData\TaskList\TaskList.baml
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\GotHoursDesktop.g.resources
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\TimeLoggerControl.baml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\TaskTreeViewControl.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\TimeLoggerControl.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Release\TaskTreeViewControl.baml
