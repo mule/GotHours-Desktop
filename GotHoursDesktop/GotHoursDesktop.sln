@@ -1,15 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotHoursDesktop", "GotHoursDesktop\GotHoursDesktop.csproj", "{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotHoursDAL", "GotHoursDAL\GotHoursDAL.csproj", "{DA6ECFF6-D5DD-4802-970D-F26ED965332B}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{79B2B4E8-BA37-498A-AF77-18B99A7A6AB2}"
 	ProjectSection(SolutionItems) = preProject
 		GotHoursDesktop.vsmdi = GotHoursDesktop.vsmdi
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotHoursDesktop", "GotHoursDesktop\GotHoursDesktop.csproj", "{9DD9495C-9E6E-4C49-B92C-A5965CAC1FF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotHoursDAL", "GotHoursDAL\GotHoursDAL.csproj", "{DA6ECFF6-D5DD-4802-970D-F26ED965332B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotHoursTest", "GotHoursTest\GotHoursTest.csproj", "{3B2DE080-14D4-4F6D-ADDB-79A20B9059B9}"
 EndProject

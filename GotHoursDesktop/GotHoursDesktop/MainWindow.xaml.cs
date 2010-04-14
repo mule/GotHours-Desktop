@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 
 namespace GotHoursDesktop
@@ -19,6 +20,8 @@ namespace GotHoursDesktop
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
      
 
 
@@ -52,6 +55,15 @@ namespace GotHoursDesktop
             {
                 pnlTaskView.Visibility = System.Windows.Visibility.Collapsed;
             }
+
+        }
+
+
+        private void pnlRoot_TimeLogged(object sender, RoutedEventArgs e)
+        {
+            Trace.TraceInformation("TaskView caught TimeLogged Event");
+
+            this.TaskView.RefreshData();
 
         }
 

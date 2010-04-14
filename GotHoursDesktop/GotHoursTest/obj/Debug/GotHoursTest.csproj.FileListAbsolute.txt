@@ -45,8 +45,8 @@ D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\Iesi.Collections.xml
 D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\GotHoursDesktop.pdb
 D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\NHibernate.xml
 D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\Castle.Core.xml
-D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\GotHoursDesktop_Accessor.dll
 D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\GotHoursDesktop_Accessor.pdb
 D:\GitRepository\GotHoursDesktop\GotHoursTest\obj\Debug\ResolveAssemblyReference.cache
 D:\GitRepository\GotHoursDesktop\GotHoursTest\obj\Debug\GotHoursTest.dll
 D:\GitRepository\GotHoursDesktop\GotHoursTest\obj\Debug\GotHoursTest.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\GotHoursDesktop_Accessor.exe

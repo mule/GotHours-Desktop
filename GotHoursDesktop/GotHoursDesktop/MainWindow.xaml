@@ -13,7 +13,7 @@
 		</DataTemplate>
 	</Window.Resources>
 
-	<Grid x:Name="pnlRoot" Margin="0,0,-0.667,1.333">
+	<Grid x:Name="pnlRoot" Margin="0,0,-0.667,1.333" local:TimeLoggerControl.TimeLogged="pnlRoot_TimeLogged">
 
         <DockPanel LastChildFill="False">
         	<local:TimeLoggerControl Margin="0" Width="733" DockPanel.Dock="Top"/>
