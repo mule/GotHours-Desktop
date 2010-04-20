@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotHoursTest", "GotHoursTes
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "GotHoursSetup", "GotHoursSetup\GotHoursSetup.wixproj", "{DD060F1B-1796-4F4E-B9F0-27D25BC90696}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvalonControlsLibrary", "AvalonControlsLibrary\AvalonControlsLibrary\AvalonControlsLibrary.csproj", "{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = GotHoursDesktop.vsmdi
@@ -78,6 +80,18 @@ Global
 		{DD060F1B-1796-4F4E-B9F0-27D25BC90696}.Release|Win32.ActiveCfg = Release|x86
 		{DD060F1B-1796-4F4E-B9F0-27D25BC90696}.Release|x86.ActiveCfg = Release|x86
 		{DD060F1B-1796-4F4E-B9F0-27D25BC90696}.Release|x86.Build.0 = Release|x86
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Release|Win32.ActiveCfg = Release|Any CPU
+		{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

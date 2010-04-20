@@ -64,3 +64,10 @@ D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TaskTreeViewControl.b
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TaskTreeViewControl.g.cs
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TimeLoggerControl.baml
 D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TimeLoggerControl.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Debug\AvalonControlsLibrary.dll
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Debug\AvalonControlsLibrary.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\bin\Debug\AvalonControlsLibrary.xml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TimeLogDetailView.baml
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\TimeLogDetailView.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\DetailView.g.cs
+D:\GitRepository\GotHoursDesktop\GotHoursDesktop\obj\Debug\DetailView.baml

@@ -22,7 +22,13 @@ namespace GotHoursDesktop
     {
 
 
-     
+        public static readonly RoutedEvent ShowTimelogEvent =
+            EventManager.RegisterRoutedEvent("ShowTimeLog",
+            RoutingStrategy.Tunnel,
+            typeof(RoutedEventHandler),
+            typeof(MainWindow));
+
+
 
 
         private MainWindowController _controller;
@@ -45,6 +51,13 @@ namespace GotHoursDesktop
         }
 
 
+        public event RoutedEventHandler ShowTimeLog
+        {
+            add { AddHandler(ShowTimelogEvent, value); }
+            remove { RemoveHandler(ShowTimelogEvent, value); }
+        }
+
+
 
 
         private void btnActivity_Click(object sender, RoutedEventArgs e)
@@ -64,6 +77,24 @@ namespace GotHoursDesktop
             Trace.TraceInformation("TaskView caught TimeLogged Event");
 
             this.TaskView.RefreshData();
+
+        }
+
+        private void pnlRoot_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            Trace.TraceInformation("pnlRoot caught SelectedItemChanged routed event");
+
+            
+
+            if (e.NewValue.GetType() == typeof(ViewModel.TimeLogViewModel))
+            {
+                var tlog = (ViewModel.TimeLogViewModel) e.NewValue;
+                this.pnllTimeLogDetail.Visibility = System.Windows.Visibility.Visible;
+                this.viewTimelogDetail.SetViewToTimeLog(tlog.Id);                
+                
+
+            }
+
 
         }
 

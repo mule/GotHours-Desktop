@@ -3,7 +3,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:local="clr-namespace:GotHoursDesktop" xmlns:Entities="clr-namespace:GotHoursDAL.Entities;assembly=GotHoursDAL" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="GotHoursDesktop.MainWindow"
 	x:Name="wndGotHours"
-	Title="GotHours" mc:Ignorable="d" Background="#FF3A6F82" SizeToContent="WidthAndHeight" d:DesignWidth="761" Height="104.001">
+	Title="GotHours" mc:Ignorable="d" Background="#FF3A6F82" SizeToContent="WidthAndHeight" Width="798">
 	<Window.Resources>
 		<DataTemplate  x:Key="TaskTemplate" DataType="{x:Type Entities:Task}">
 			<StackPanel>
@@ -13,7 +13,7 @@
 		</DataTemplate>
 	</Window.Resources>
 
-	<Grid x:Name="pnlRoot" Margin="0,0,-0.667,1.333" local:TimeLoggerControl.TimeLogged="pnlRoot_TimeLogged">
+	<Grid x:Name="pnlRoot" Margin="0,0,-0.667,1.333" local:TimeLoggerControl.TimeLogged="pnlRoot_TimeLogged" TreeView.SelectedItemChanged="pnlRoot_SelectedItemChanged ">
 
         <DockPanel LastChildFill="False">
         	<local:TimeLoggerControl Margin="0" Width="733" DockPanel.Dock="Top"/>
@@ -24,6 +24,9 @@
         	<DockPanel x:Name="pnlTaskView" LastChildFill="False" VerticalAlignment="Top" DockPanel.Dock="Right" Visibility="Collapsed">
         		<local:TaskTreeViewControl x:Name="TaskView" Margin="0,0,0,25" d:LayoutOverrides="VerticalAlignment, Height, HorizontalMargin" Width="200" DockPanel.Dock="Bottom" d:IsLocked="True" />
         	</DockPanel>
+        	<Grid x:Name="pnllTimeLogDetail" Margin="0,4,0,0" Width="578" VerticalAlignment="Top" Visibility="Collapsed">
+        		<local:TimeLogDetailView x:Name="viewTimelogDetail" Margin="29,8,21,0" VerticalAlignment="Top" Height="285" HorizontalAlignment="Center"/>
+        	</Grid>
         </DockPanel>
 
 

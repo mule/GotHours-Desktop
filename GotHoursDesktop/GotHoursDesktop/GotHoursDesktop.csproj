@@ -115,6 +115,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CommonController.cs" />
+    <Compile Include="DetailView.xaml.cs">
+      <DependentUpon>DetailView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindowController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -128,10 +131,15 @@
     <Compile Include="SampleData\TaskList\TaskList.xaml.cs">
       <DependentUpon>TaskList.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ShowTimeLogArgs.cs" />
     <Compile Include="TaskTreeViewControl.xaml.cs">
       <DependentUpon>TaskTreeViewControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="TaskTreeViewController.cs" />
+    <Compile Include="TimeLogDetailController.cs" />
+    <Compile Include="TimeLogDetailView.xaml.cs">
+      <DependentUpon>TimeLogDetailView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TimeLoggerControl.xaml.cs">
       <DependentUpon>TimeLoggerControl.xaml</DependentUpon>
     </Compile>
@@ -140,6 +148,10 @@
     <Compile Include="ViewModel\TimeLogViewModel.cs" />
     <Compile Include="ViewModel\TreeViewItemViewModel.cs" />
     <Compile Include="ViewModel\UserTasksViewModel.cs" />
+    <Page Include="DetailView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -158,6 +170,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TimeLogDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TimeLoggerControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -175,10 +191,17 @@
     <DesignTimeOnly Include="SampleData\TaskList\TaskList.xsd" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AvalonControlsLibrary\AvalonControlsLibrary\AvalonControlsLibrary.csproj">
+      <Project>{F2E7B3F0-E03E-4341-984F-2962ACA8C07E}</Project>
+      <Name>AvalonControlsLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GotHoursDAL\GotHoursDAL.csproj">
       <Project>{DA6ECFF6-D5DD-4802-970D-F26ED965332B}</Project>
       <Name>GotHoursDAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Themes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

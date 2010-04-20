@@ -50,3 +50,6 @@ D:\GitRepository\GotHoursDesktop\GotHoursTest\obj\Debug\ResolveAssemblyReference
 D:\GitRepository\GotHoursDesktop\GotHoursTest\obj\Debug\GotHoursTest.dll
 D:\GitRepository\GotHoursDesktop\GotHoursTest\obj\Debug\GotHoursTest.pdb
 D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\GotHoursDesktop_Accessor.exe
+D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\AvalonControlsLibrary.dll
+D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\AvalonControlsLibrary.pdb
+D:\GitRepository\GotHoursDesktop\GotHoursTest\bin\Debug\AvalonControlsLibrary.xml
