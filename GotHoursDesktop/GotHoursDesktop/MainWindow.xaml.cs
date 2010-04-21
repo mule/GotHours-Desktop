@@ -42,7 +42,7 @@ namespace GotHoursDesktop
             TrayMinimizer.EnableMinimizeToTray(this);
 
 
-
+           
             TaskView.CurrentUser = _controller.CurrentUser;
 
 
@@ -78,6 +78,9 @@ namespace GotHoursDesktop
 
             this.TaskView.RefreshData();
 
+            this.viewTimelogDetail.SetViewToTimeLog(((TimeLogEventArgs)e).Id);
+
+
         }
 
         private void pnlRoot_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
@@ -95,6 +98,16 @@ namespace GotHoursDesktop
 
             }
 
+
+        }
+
+
+
+        private void pnllTimeLogDetail_TimeLogDeleted(object sender, RoutedEventArgs e)
+        {
+            pnllTimeLogDetail.Visibility = System.Windows.Visibility.Collapsed;
+
+            this.TaskView.RefreshData();
 
         }
 

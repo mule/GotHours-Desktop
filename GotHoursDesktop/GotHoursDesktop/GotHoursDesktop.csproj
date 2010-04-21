@@ -131,7 +131,7 @@
     <Compile Include="SampleData\TaskList\TaskList.xaml.cs">
       <DependentUpon>TaskList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ShowTimeLogArgs.cs" />
+    <Compile Include="TimeLogEventArgs.cs" />
     <Compile Include="TaskTreeViewControl.xaml.cs">
       <DependentUpon>TaskTreeViewControl.xaml</DependentUpon>
     </Compile>

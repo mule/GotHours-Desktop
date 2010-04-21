@@ -91,7 +91,7 @@ namespace GotHoursDesktop
 
 
 
-        public void LogTime(string pTaskName, DateTime pStartTime, DateTime pEndTime)
+        public  TimeLog LogTime(string pTaskName, DateTime pStartTime, DateTime pEndTime)
         {
             TimeLog tLog = new TimeLog();
             tLog.User = _currentUser;
@@ -115,6 +115,9 @@ namespace GotHoursDesktop
             tLog.Task = _currentTask;
 
             _session.SaveOrUpdate(tLog);
+            _session.Refresh(tLog);
+
+            return tLog;
 
             loadTasks();
 
